@@ -1,16 +1,20 @@
 Package: asciiConverter
 Type: Package
-Title: What the Package Does (Title Case)
+Title: ASCII Converter - Fancy Printing of Text
 Version: 0.1.0
 Authors@R: c(
     person(
-      "Jane", "Doe",
-      email = "jane@example.com",
+      "Selam", "Maher",
+      "Lydia", "Blackwell Esslami",
+      email = "smmaher@smith.edu", lblackwellesslami@smith.edu, 
       role = c("aut", "cre")
     )
   )
-Description: More about what it does (maybe more than one line).
-    Continuation lines should be indented.
+Description: The ascii converter package aims to provide users witha. tool that is both 
+creative and simple in reconstructing regular text into a fun ascii art text that is bolded
+and block styled. Users will be able to input text through various sources. The package will 
+then output stylized block text. Our goal through this package is to build a visually appealing 
+and striking text that will be an easy and versitaile tool for users. 
 License: What license is it under?
 Encoding: UTF-8
 LazyData: true
