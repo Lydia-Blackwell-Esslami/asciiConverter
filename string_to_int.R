@@ -9,5 +9,5 @@
 string_convert <- function(x){
   x <- strsplit(x, "")
   y <- map(x, utf8ToInt)
-  return(y-64)
+  return(y-32)
 }
