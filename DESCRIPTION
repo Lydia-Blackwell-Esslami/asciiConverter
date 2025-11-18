@@ -1,7 +1,7 @@
 Package: asciiConverter
 Type: Package
 Title: ASCII Converter - Fancy Printing of Text
-Version: 0.1.0
+Version: 1.0.0
 Authors@R: c(
     person(
       "Selam", "Maher",
