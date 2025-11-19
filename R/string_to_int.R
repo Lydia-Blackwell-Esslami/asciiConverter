@@ -2,12 +2,16 @@
 #'
 #' @param x The input string
 #'
+#' @importFrom purrr map
+#'
 #' @returns A double vector with the same length as x
 #' @export
 #'
 #' @examples
+#' string_convert("ABCD")
 string_convert <- function(x){
   x <- strsplit(x, "")
-  y <- map(x, utf8ToInt)
-  return(y-32)
+  y <- purrr::map(x[[1]], utf8ToInt)
+  z <- unlist(y)
+  return(z-32)
 }
