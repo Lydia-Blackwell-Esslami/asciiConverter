@@ -1,4 +1,4 @@
-#' Vector File
+#' Read First Lines
 #'
 #' @param files A character vector of file paths.
 #'
@@ -6,12 +6,12 @@
 #' @export
 #'
 #' @examples
-#' \dontrun {
+#' \dontrun{
 #' read_first_lines(c("file1.txt", "file2.txt"))
 #' }
 
 read_first_lines <- function(files) {
-  sapply(files, funnction(f){
+  sapply(files, function(f){
     con <- file(f, "r")
     on.exit(close(con))
     line <- readLines(con, n = 1, warn = FALSE)

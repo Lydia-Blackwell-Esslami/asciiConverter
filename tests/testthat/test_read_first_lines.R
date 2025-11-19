@@ -8,7 +8,7 @@ test_that("read_first_lines returns correct first lines", {
   
   expected <- c(
     setNames("Hello", basename(file1)),
-    setNames("ASCII art", basenmae(file2))
+    setNames("ASCII art", basename(file2))
   )
   
   result <- read_first_lines(c(file1, file2))

@@ -8,6 +8,6 @@
 #' @examples
 string_convert <- function(x){
   x <- strsplit(x, "")
-  y <- map(x, utf8ToInt)
-  return(y-32)
+  y <- purrr::map(x, utf8ToInt)
+  return(y - 32)
 }
