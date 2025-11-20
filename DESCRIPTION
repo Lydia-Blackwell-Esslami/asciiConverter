@@ -18,7 +18,6 @@ Description: The ascii converter package aims to provide users witha. tool that 
 License: MIT + file LICENSE
 Depends: purrr
 Encoding: UTF-8
-Imports: purrr
 LazyData: true
 URL: https://github.com/Lydia-Blackwell-Esslami/asciiConverter
 BugReports: https://github.com/Lydia-Blackwell-Esslami/asciiConverter/issues
