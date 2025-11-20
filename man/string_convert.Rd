@@ -15,3 +15,6 @@ A double vector with the same length as x
 \description{
 Convert String to Vector of utf8 values
 }
+\examples{
+string_convert("ABCD")
+}

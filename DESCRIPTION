@@ -16,6 +16,7 @@ Authors@R: c(
   )
 Description: The ascii converter package aims to provide users witha. tool that is both creative and simple in reconstructing regular text into a fun ascii art text that is bolded and block styled. Users will be able to input text through various sources. The package will then output stylized block text. Our goal through this package is to build a visually appealing and striking text that will be an easy and versitaile tool for users. 
 License: MIT + file LICENSE
+Depends: purrr
 Encoding: UTF-8
 Imports: purrr
 LazyData: true
