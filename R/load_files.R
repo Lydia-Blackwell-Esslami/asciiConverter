@@ -9,8 +9,15 @@
 #' @details
 #' Use this to load in the entire library, and then work with it from the output list 
 #' 
-#' Example usage:
-#' your_files <- load_files(c("SomeFile.txt", "OtherFile.txt")))
+#' @examples
+#' \dontrun{
+#'   your_files <- load_files(c("SomeFile.txt", "OtherFile.txt")))
+#'   #Intended usage
+#'   variables <- configure()
+#'   char_library <- load_files(variables[1])
+#' }
+#' 
+#' 
 #' 
 load_files <- function(filenames){
   letters_1 <-list()

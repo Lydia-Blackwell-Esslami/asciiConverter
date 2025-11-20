@@ -17,8 +17,16 @@ is a vector and each element ofa vector is a line of a file
 Load txt files into memory
 }
 \details{
-Use this to load in the entire library, and then work with it from the output list 
+Use this to load in the entire library, and then work with it from the output list
+}
+\examples{
+\dontrun{
+  your_files <- load_files(c("SomeFile.txt", "OtherFile.txt")))
+  #Intended usage
+  variables <- configure()
+  char_library <- load_files(variables[1])
+}
 
-Example usage:
-your_files <- load_files(c("SomeFile.txt", "OtherFile.txt")))
+
+
 }
