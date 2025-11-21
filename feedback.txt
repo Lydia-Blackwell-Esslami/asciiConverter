@@ -1,0 +1,9 @@
+Lydia and Selam, thank you for the package! 
+
+Looking at it so far, you have the framework done, but there will be a lot of functionality to each of the files that should be done by the next checkpoint. I think getting the ascii art printing out will be useful to get working.
+
+Overall however, you all are on track. Here are some suggestions/things to keep in mind as you head to the next checkpoint:
+
+- As mentioned, get to the point of being able to do the bare minimum with the functionality of your package, which will allow you to do some base tests and run examples from the manuals.
+- Get those text files in there too.
+- Create the potential example you might start with in the README file. 
