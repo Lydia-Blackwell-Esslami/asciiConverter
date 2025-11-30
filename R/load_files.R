@@ -3,7 +3,7 @@
 #' @param filenames String vector with the names of files to be added
 #'
 #' @returns A list with the same length as the input vector, where each element of the list
-#' is a vector and each element ofa vector is a line of a file
+#' is a vector and each element of a vector is a line of a file
 #' @export
 #' 
 #' @details
@@ -19,10 +19,10 @@
 #' 
 #' 
 #' 
-load_files <- function(filenames){
+load_files <- function(directory, filenames){
   letters_1 <-list()
   for(x in filenames){
-    letters_2<- c(readLines(x, warn = FALSE))
+    letters_2<- c(readLines(paste(directory, x, sep = ""), warn = FALSE))
     letters_1 <- append(letters_1, list(letters_2))
   }
   return(letters_1)

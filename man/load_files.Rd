@@ -4,14 +4,14 @@
 \alias{load_files}
 \title{Load txt files into memory}
 \usage{
-load_files(filenames)
+load_files(directory, filenames)
 }
 \arguments{
 \item{filenames}{String vector with the names of files to be added}
 }
 \value{
 A list with the same length as the input vector, where each element of the list
-is a vector and each element ofa vector is a line of a file
+is a vector and each element of a vector is a line of a file
 }
 \description{
 Load txt files into memory
