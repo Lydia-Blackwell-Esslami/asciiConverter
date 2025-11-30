@@ -26,7 +26,7 @@ make_lines <- function(indexes, size, char_library){
     for(x in indexes){
       line_1 <- paste(line_1, char_library[[x]][y])
     }
-    print(line_1)
+    cat(line_1, "\n")
   }
   
   

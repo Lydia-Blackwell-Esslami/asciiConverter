@@ -22,7 +22,7 @@
 load_files <- function(directory, filenames){
   letters_1 <-list()
   for(x in filenames){
-    letters_2<- c(readLines(paste(directory, x, sep = ""), warn = FALSE))
+    letters_2<- c(scan(file = paste(directory, x, sep = ""), what = character(), sep = "\n", quote = "``"))
     letters_1 <- append(letters_1, list(letters_2))
   }
   return(letters_1)
