@@ -14,9 +14,14 @@ Authors@R: c(
       role = c("aut")
     )
   )
-Description: The ascii converter package aims to provide users witha. tool that is both creative and simple in reconstructing regular text into a fun ascii art text that is bolded and block styled. Users will be able to input text through various sources. The package will then output stylized block text. Our goal through this package is to build a visually appealing and striking text that will be an easy and versitaile tool for users. 
+Description: The asciiConverter package provides users with a creative and simple
+ way to convert regular text into fun ASCII art text that is bolded and block styled.
+ Users can input text through various sources, and the package outputs stylized block
+ text either to the R console or to files. This package aims to offer a visually
+ appealing and versatile tool that is easy to use, allowing users to customize output
+ for messages, headers, or other creative purposes.
 License: MIT + file LICENSE
-Depends: purrr
+Imports: purrr
 Encoding: UTF-8
 LazyData: true
 URL: https://github.com/Lydia-Blackwell-Esslami/asciiConverter

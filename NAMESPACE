@@ -2,6 +2,7 @@
 
 export(configure)
 export(load_files)
+export(make_file)
 export(make_lines)
 export(read_first_lines)
 export(string_convert)
