@@ -13,5 +13,5 @@ string_convert <- function(x){
   x <- strsplit(x, "")
   y <- purrr::map(x[[1]], utf8ToInt)
   z <- unlist(y)
-  return(z-32)
+  return(z-31)
 }

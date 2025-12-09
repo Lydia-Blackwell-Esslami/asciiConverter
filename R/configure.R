@@ -1,5 +1,15 @@
-x <- c("A.txt", "B.txt", "C.txt", "D.txt", "E.txt", "F.txt", "G.txt", "H.txt","I.txt",
-       "J.txt", "K.txt", "L.txt", "M.txt", "N.txt", "O.txt", "P.txt", "Q.txt", "R.txt")
+x <- c("space.txt","bang.txt","dbl_quote.txt","hash.txt","dollar.txt","percent.txt"
+       ,"ampersand.txt","apostrophe.txt" ,"left_paren.txt","right_paren.txt","star.txt"
+       ,"plus.txt","comma.txt","dash.txt","dot.txt","right_slash.txt","0.txt","1.txt"
+       ,"2.txt","3.txt","4.txt","5.txt","6.txt","7.txt","8.txt","9.txt","colon.txt"
+       ,"semicolon.txt","left_angle.txt","equals.txt","right_angle.txt","q_mark.txt","at.txt"
+       ,"A.txt", "B.txt", "C.txt", "D.txt", "E.txt", "F.txt", "G.txt", "H.txt","I.txt",
+       "J.txt", "K.txt", "L.txt", "M.txt", "N.txt", "O.txt", "P.txt", "Q.txt", "R.txt"
+       ,"S.txt","T.txt","U.txt","V.txt","W.txt","X.txt","Y.txt","Z.txt","left_bracket.txt"
+       ,"left_slash.txt","right_bracket.txt","up.txt","underscore.txt","backtick.txt"
+       ,"la.txt","lb.txt","lc.txt","ld.txt","le.txt","lf.txt","lg.txt","lh.txt","li.txt"
+       ,"lj.txt","lk.txt","ll.txt","lm.txt","ln.txt","lo.txt","lp.txt","lq.txt","lr.txt"
+       ,"ls.txt","lt.txt","lu.txt","lv.txt","lw.txt","lx.txt","ly.txt","lz.txt")
 y <- "letters/"
 #' Edit the character library the package uses
 #'
