@@ -7,6 +7,8 @@
 load_files(directory, filenames)
 }
 \arguments{
+\item{directory}{A string specifying the folder containing the ASCII .txt files}
+
 \item{filenames}{String vector with the names of files to be added}
 }
 \value{

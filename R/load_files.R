@@ -1,6 +1,7 @@
 #' Load txt files into memory
 #'
 #' @param filenames String vector with the names of files to be added
+#' @param directory A string specifying the folder containing the ASCII .txt files
 #'
 #' @returns A list with the same length as the input vector, where each element of the list
 #' is a vector and each element of a vector is a line of a file
