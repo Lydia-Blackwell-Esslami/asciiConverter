@@ -12,4 +12,5 @@
 #' x
 line_breaks <- function(line, size){
   new_lines <- split(line, ceiling(seq_along(line)/size))
+  return(new_lines)
 }

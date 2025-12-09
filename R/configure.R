@@ -32,5 +32,5 @@ y <- "letters/"
 #' @examples
 #' configure()
 configure <- function(filenames = x, directory = y, offset_1 = 31, size = 7){
-  return(list(filenames, directory, offset_1))
+  return(list(filenames, directory, offset_1, size))
 }
