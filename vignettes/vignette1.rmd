@@ -1,0 +1,58 @@
+---
+title: "ASCII Art Package Tutorial"
+author: "Lydia Blackwell Esslami & Selam Maher"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{ASCII Art Package Tutorial}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+This package allows you to generate text-based ASCII art using a library of 
+pre-defined letter files.  
+
+This vignette demonstrates how to configure your character library, load letter 
+files, convert strings to indices, generate ASCII art lines, write the output to
+a file, and read specific lines from files. By the end, you will be able to turn
+any string into a text-based visual representation.
+
+---
+
+```r
+library(asciiConverter) 
+
+# Configure using default letters
+vars <- configure()
+
+# Pull components
+filenames <- vars[[1]]
+directory <- vars[[2]]
+offset <- vars[[3]]
+
+cat("Files:", filenames, "\n")
+cat("Directory:", directory, "\n")
+cat("Offset:", offset, "\n")
+
+char_library <- load_files(directory, filenames)
+
+# View the first few lines of the first letter
+head(char_library[[1]])
+
+text <- "HELLO"
+indexes <- string_convert(text)
+print(indexes)
+
+size <- 7 
+make_lines(indexes, size, char_library)
+
+output_file <- "hello_art.txt"
+make_file(indexes, size, char_library, output_file)
+cat("ASCII art written to", output_file, "\n")
+cat(paste(readLines(output_file), collapse = "\n"))
+
+sample_files <- paste0(directory, filenames[1:3])
+first_lines <- read_first_lines(sample_files)
+print(first_lines)
+```
+
+
