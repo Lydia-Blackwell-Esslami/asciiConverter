@@ -42,17 +42,6 @@ with:
 pak::pak("Lydia-Blackwell-Esslami/asciiConverter")
 ```
 
-## Installation
-
-You can install the development version of asciiConverter from
-[GitHub](https://github.com/Lydia-Blackwell-Esslami/asciiConverter)
-with:
-
-``` r
-# install.packages("pak")
-pak::pak("Lydia-Blackwell-Esslami/asciiConverter")
-```
-
 ## Example
 
 This is a basic example which shows you how to solve a common problem:
