@@ -12,15 +12,20 @@
 #' 
 #' @examples
 #' \dontrun{
-#'   your_files <- load_files(c("SomeFile.txt", "OtherFile.txt")))
-#'   #Intended usage
-#'   variables <- configure()
-#'   char_library <- load_files(variables[1])
+#' # Load default character library
+#' settings <- asciiConverter::configure()
+#' char_lib <- load_files(settings$directory, settings$filenames)
 #' }
-#' 
-#' 
-#' 
+
 load_files <- function(directory, filenames){
+  if(missing(directory) || !dir.exists(directory)) {
+    stop(paste("Directory does not exist:", directory))
+  }
+  
+  if(missing(filenames) || length(filenames) == 0) {
+    stop("You must provide at least one filename.")
+  }
+  
   letters_1 <-list()
   for(x in filenames){
     letters_2<- c(scan(file = paste(directory, x, sep = ""), what = character(), sep = "\n", quote = "``"))

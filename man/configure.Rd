@@ -13,11 +13,10 @@ configure(filenames = x, directory = y, offset_1 = 31, size = 7)
 
 \item{offset_1}{A whole number representing the difference between 1 and the decimal code value of the first file}
 
-\item{size}{The lenght of the files in the library. All files should be the same number of lines, with no trailing blank lines}
+\item{size}{The length of the files in the library. All files should be the same number of lines, with no trailing blank lines}
 }
 \value{
-A vector containing the parameters, in the same order. Catch the vector and add it to the global
-environment, these values will be needed later.
+A named list containing filenames, directory, offset_1, and size.
 }
 \description{
 Edit the character library the package uses
@@ -29,5 +28,9 @@ and 96 for a library with only lowercase letters. However, DO NOT change the off
 Things will break.
 }
 \examples{
-configure()
+\dontrun{
+settings <- configure()
+settings$filenames
+settings$directory
+}
 }

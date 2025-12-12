@@ -1,8 +1,9 @@
 #' Read First Lines
 #'
-#' @param files A character vector of file paths.
+#' @param files Character Vector. Paths to the files to read.
 #'
-#' @returns A character vector containing the first line of each file.
+#' @returns A character vector containing the first line of each file.If a file does not exist
+#' or is empty, returns an empty string for that file.
 #' @export
 #'
 #' @examples

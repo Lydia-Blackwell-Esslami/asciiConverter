@@ -19,6 +19,13 @@ This will allow for users to edit and customize the output while also
 providing multiple input and output options. The package can be useful
 in building creative messaging for message, headers, or designs within
 the user’s console, application, report, or other academic tools.
+Creating ASCII art through other formats such as by hand can be slow,
+difficult, and tedious especially across different project. However, the
+asciiConverter package helps solve this problem by giving users a
+simple, reliable, and fully automated way to generate a fun, block style
+tex that can be used for an array of outputs. By providing a
+standardized charter library, along with tools that are both flexible
+and simple allowing ease for users to apply ASCII art to their work.
 
 Some of the key components of this package include functions that are
 able to convert individual letters into the ASCII block format.
@@ -30,6 +37,15 @@ terminal or file. Through combining these functions, the asciiConverter
 brings forth an efficient and organized tool to help turn regular text
 into fun, fancy, block style text that will be fast, easy, accessible,
 and user friendly allowing for a new creative tool in coding.
+
+Lastly, to use the asciiConverter package users will be able to install
+thee package directly from GitHub using the devtools package. From
+there, once the package is loaded this will give instant access to all
+the core functions. This includes text conversion, file-based input and
+output, and configuration tools to customize the original ASCII
+character library. This installation process is simple and only requires
+basic R packages. Therefore making it easier for users to add
+asciiConverter to their work and start creating ASCII art!
 
 ## Installation
 
@@ -44,11 +60,17 @@ pak::pak("Lydia-Blackwell-Esslami/asciiConverter")
 
 ## Example
 
-## Example
-
 This is a basic example which shows you how to solve a common problem:
 
 ``` r
 library(asciiConverter)
-## basic example code
+
+# Load default configuration and character library
+vars <- configure()
+char_lib <- load_files(vars[[2]], vars[[1]])
+
+# Convert a string to ASCII block text and print to console
+text <- "HI"
+indexes <- string_convert(text)
+make_lines(indexes, size = vars[[4]], char_library = char_lib)
 ```

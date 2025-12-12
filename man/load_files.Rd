@@ -23,12 +23,8 @@ Use this to load in the entire library, and then work with it from the output li
 }
 \examples{
 \dontrun{
-  your_files <- load_files(c("SomeFile.txt", "OtherFile.txt")))
-  #Intended usage
-  variables <- configure()
-  char_library <- load_files(variables[1])
+# Load default character library
+settings <- asciiConverter::configure()
+char_lib <- load_files(settings$directory, settings$filenames)
 }
-
-
-
 }

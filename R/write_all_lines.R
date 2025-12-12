@@ -19,7 +19,10 @@
 #'
 #' @examples
 #' \dontrun{
-#' "here is where the examples would be if i wrote any"
+#' settings <- asciiConverter::configure()
+#' char_lib <- asciiConverter::load_files(settings$directory, settings$filenames)
+#' letters <- asciiConverter::string_convert("HELLO WORLD")
+#' write_all_lines(letters, settings$size, char_lib, "output_ascii.txt")
 #' }
 write_all_lines <- function(indexes, size, char_library, filename){
   con <- file(filename, open = "a")

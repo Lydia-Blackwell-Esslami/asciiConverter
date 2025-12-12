@@ -5,14 +5,15 @@
 #'
 #' @returns None, output is printed to the console
 #' @export
-#' 
 #' @importFrom purrr map
 #'
 #' @examples
+#' \dontrun{
 #' a <- asciiConverter::configure()
 #' b <- asciiConverter::load_files(a[[2]], a[[1]])
 #' interactive(7, b, a[[4]])
 #' #now type something and press enter twice
+#' }
 interactive <- function(size, char_library){
   the_string <- scan(what = character())
   v <- map(the_string, asciiConverter::string_convert)

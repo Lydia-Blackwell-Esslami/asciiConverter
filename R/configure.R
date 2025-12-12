@@ -16,10 +16,9 @@ y <- "letters/"
 #' @param filenames A vector with the names of all the text files used for conversion
 #' @param directory A string containing relative path to the directory where they are stored
 #' @param offset_1 A whole number representing the difference between 1 and the decimal code value of the first file
-#' @param size The lenght of the files in the library. All files should be the same number of lines, with no trailing blank lines
+#' @param size The length of the files in the library. All files should be the same number of lines, with no trailing blank lines
 #'
-#' @returns A vector containing the parameters, in the same order. Catch the vector and add it to the global
-#' environment, these values will be needed later. 
+#' @returns A named list containing filenames, directory, offset_1, and size.
 #' @export
 #' 
 #' @details
@@ -30,7 +29,11 @@ y <- "letters/"
 #' 
 #'
 #' @examples
-#' configure()
+#' \dontrun{
+#' settings <- configure()
+#' settings$filenames
+#' settings$directory
+#' }
 configure <- function(filenames = x, directory = y, offset_1 = 31, size = 7){
   return(list(filenames, directory, offset_1, size))
 }
