@@ -1,9 +1,12 @@
 #' Fully automated animation workflow. Upload your frames, update the settings, and enjoy
 #'
-#' @returns
+#' @returns none
 #' @export
 #'
 #' @examples
+#' \dontrun{
+#' "here is where the examples would be if i wrote any"
+#' }
 animate <- function(frames, size){
   while(TRUE){
     for(x in 1:length(frames)){

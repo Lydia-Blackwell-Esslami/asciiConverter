@@ -13,6 +13,9 @@
 #' 
 #'
 #' @examples
+#' \dontrun{
+#' "here is where the examples would be if i wrote any"
+#' }
 file_to_file <- function(size, char_library, in_file, out_file){
   the_string <- scan(file = in_file, what = character(), sep = "\n")
   v <- map(the_string, asciiConverter::string_convert)
