@@ -3,7 +3,7 @@
 export(animate)
 export(configure)
 export(file_to_file)
-export(interactive)
+export(interactive_1)
 export(line_breaks)
 export(load_files)
 export(make_file)

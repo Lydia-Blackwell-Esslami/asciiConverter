@@ -9,10 +9,10 @@ animate(frames, size)
 \arguments{
 \item{frames}{A list of character-library vectors representing each animation frame.}
 
-\item{size}{The height of each ASCII character (from configure())/}
+\item{size}{The height of each ASCII character (from configure())}
 }
 \value{
-The function prints animated ASCII frames to the console in an infinite loop, therefore there are is no return.
+None. This function prints animated ASCII frames to the console
 }
 \description{
 Fully automated animation workflow. Upload your frames, update the settings, and enjoy

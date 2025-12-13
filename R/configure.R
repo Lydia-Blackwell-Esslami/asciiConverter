@@ -10,7 +10,7 @@ x <- c("space.txt","bang.txt","dbl_quote.txt","hash.txt","dollar.txt","percent.t
        ,"la.txt","lb.txt","lc.txt","ld.txt","le.txt","lf.txt","lg.txt","lh.txt","li.txt"
        ,"lj.txt","lk.txt","ll.txt","lm.txt","ln.txt","lo.txt","lp.txt","lq.txt","lr.txt"
        ,"ls.txt","lt.txt","lu.txt","lv.txt","lw.txt","lx.txt","ly.txt","lz.txt")
-y <- "letters/"
+y <- "data/letters/"
 #' Edit the character library the package uses
 #'
 #' @param filenames A vector with the names of all the text files used for conversion

@@ -1,9 +1,9 @@
 #' Fully automated animation workflow. Upload your frames, update the settings, and enjoy
 #'
 #' @param  frames A list of character-library vectors representing each animation frame.
-#' @param size The height of each ASCII character (from configure())/
+#' @param size The height of each ASCII character (from configure())
 #' 
-#' @returns The function prints animated ASCII frames to the console in an infinite loop, therefore there are is no return.
+#' @returns None. This function prints animated ASCII frames to the console
 #' @export
 #'
 #' @examples
